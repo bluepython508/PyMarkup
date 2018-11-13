@@ -1,11 +1,11 @@
 import pytest
 
-from pyml import MLBuilder
+from pymarkup import MarkupBuilder
 
 
 @pytest.fixture
 def t():
-    return MLBuilder()
+    return MarkupBuilder()
 
 
 def test_basic_buildings(t):

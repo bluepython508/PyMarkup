@@ -24,7 +24,7 @@ def read(*names, **kwargs):
 
 
 setup(
-    name='pyml',
+    name='pymarkup',
     version='0.0.1',
     license='MIT license',
     description='A basic internal XML-generating DSL in Python 3.',
@@ -68,6 +68,5 @@ setup(
         # eg:
         #   'rst': ['docutils>=0.11'],
         #   ':python_version=="2.6"': ['argparse'],
-    },
-    test_requires=['pytest']
-)
+        'test': ['pytest']
+    })

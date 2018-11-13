@@ -5,17 +5,17 @@ from typing import List, Dict
 
 
 @dataclass
-class MLBuilder:
+class MarkupBuilder:
     element_name: str = 'html'
     build_context: List = field(default_factory=list)
-    parent: MLBuilder = None
+    parent: MarkupBuilder = None
     params: Dict = field(default_factory=dict)
 
     def __getattr__(self, item):
-        return MLBuilder(item, self.build_context)
+        return MarkupBuilder(item, self.build_context)
 
     def __add__(self, other):
-        if isinstance(other, MLBuilder):
+        if isinstance(other, MarkupBuilder):
             other.self_closing()
             return
         self.build_context.append(str(other))
