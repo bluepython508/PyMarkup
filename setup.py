@@ -69,5 +69,5 @@ setup(
         #   'rst': ['docutils>=0.11'],
         #   ':python_version=="2.6"': ['argparse'],
         'tests': ['pytest'],
-        'dev': ['black', 'pymarkup[tests]']
+        'dev': ['black', 'pymarkup[tests]', 'twine']
     })
