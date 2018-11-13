@@ -5,7 +5,7 @@ python:
 dist: xenial
 sudo: yes
 install:
-  - .travis/install.sh
+  - source travis/install.sh
 script:
   - pytest
 cache: pip
