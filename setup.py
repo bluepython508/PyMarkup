@@ -29,12 +29,13 @@ setup(
     license='MIT license',
     description='A basic internal XML-generating DSL in Python 3.',
     long_description='%s\n%s' % (
-        re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.rst')),
-        re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))
+        re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.md')),
+        re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.md'))
     ),
+    long_description_content_type='text/markdown',
     author='Ben Soroos',
     author_email='ben@soroos.net',
-    url='https://github.com/bluepython508/python-pyml',
+    url='https://github.com/bluepython508/PyMarkup',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
