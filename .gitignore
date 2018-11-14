@@ -103,3 +103,6 @@ venv.bak/
 # mypy
 .mypy_cache/
 .idea/
+docs/.build/doctrees/
+docs/.build/html/
+
