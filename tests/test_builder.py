@@ -1,5 +1,4 @@
 import pytest
-from pathlib import Path
 
 from pymarkup import MarkupBuilder
 
@@ -14,7 +13,6 @@ def test_basic_buildings(t):
         t + 'Hello, World!'
         with t.h1:
             t + 'Hello!'
-    Path('/tmp/test.html').write_text(repr(t))
     assert repr(t) == '''<html>
 Hello, World!
 <h1>
