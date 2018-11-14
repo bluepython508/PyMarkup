@@ -15,7 +15,18 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
+import sys
 
+
+class DataclassModule:
+    def dataclass(self, fun):
+        return fun
+
+    def field(self, *args, **kwargs):
+        pass
+
+
+sys.modules['dataclasses'] = DataclassModule()
 
 # -- Project information -----------------------------------------------------
 
