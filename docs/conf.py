@@ -15,19 +15,7 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-import sys
 
-
-class DataclassModule:
-    def dataclass(self, cls):
-        print(cls)
-        return cls
-
-    def field(self, *args, **kwargs):
-        pass
-
-
-sys.modules['dataclasses'] = DataclassModule()
 
 # -- Project information -----------------------------------------------------
 
@@ -60,7 +48,7 @@ extensions = [
 intersphinx_mapping = {'python': ('https://docs.python.org/3', None)}
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['.templates']
-
+autodoc_mock_imports = ['dataclasses']
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
