@@ -20,7 +20,6 @@ A basic example::
                     t + x
 
 ``repr(t)`` gives::
-..
 
     <html>
     <h1 id="HelloWorld">
