@@ -19,8 +19,9 @@ import sys
 
 
 class DataclassModule:
-    def dataclass(self, fun):
-        return fun
+    def dataclass(self, cls):
+        print(cls)
+        return cls
 
     def field(self, *args, **kwargs):
         pass
