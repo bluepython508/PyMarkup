@@ -69,5 +69,6 @@ setup(
         #   'rst': ['docutils>=0.11'],
         #   ':python_version=="2.6"': ['argparse'],
         'tests': ['pytest'],
-        'dev': ['pytest', 'black', 'twine', 'sphinx', 'sphinx_rtd_theme']
+        'dev': ['pytest', 'black', 'twine', 'sphinx', 'sphinx_rtd_theme'],
+        'docs': ['sphinx', 'sphinx_rtd_theme', 'dataclasses']
     })
