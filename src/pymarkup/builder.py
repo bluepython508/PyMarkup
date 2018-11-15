@@ -43,8 +43,8 @@ class MarkupBuilder:
         """
         Add ``other`` to current text.
 
-        If ``other`` is a :ref:`MarkupBuilder` just run :ref:`MarkupBuilder.self_closing` on it, otherwise add ``str(other)`` to ``self\
-        .text``
+        If ``other`` is a :ref:`MarkupBuilder` just run :ref:`MarkupBuilder.self_closing()` on it, otherwise add \
+        ``str(other)`` to ``self.text``.
 
         Parameters
         ----------
